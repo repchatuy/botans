@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Наши ботаники</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<meta http-equiv = 'Content-Type' content = 'text/html; charset = UTF-8'/>
+	<link rel="stylesheet" type = 'text/css' href="style.css"/>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+
+	<script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+	</script>
+
+	<script>
+		$('#animatedElement').click(function() {
+			$(this).addClass("slideUp");
+		});
+	</script>
+
+	<header>
+		<div id = 'object'>
+			<img align='left' class="slideUp" src = 'images/glasses.png'/>
+			<img align='right' class="slideUp" src = 'images/glasses.png'/>
+			<h1>Лучшие ботаны</h1>
+		</div>
+	</header>
+
+	<div class="botan">
+		<a href='yusich.html'> <img class = 'faceimage' src = 'images/yusich.jpg' title = 'Хороший ботан, не так ли?'/> </a> <p class='title_botan'> Артем Юсупов </p>
+		<p> Силен в: </p>
+		<ul>
+			<li> Математика </li>
+			<li> Физика </li>
+			<li> Программирование </li>
+		</ul>
+		</br>
+			Универсальный ботан. Силен в точных науках. Не оставит конкурентам ни единого шанса, если поймет тему. Отличается неприязнью к двойкам, и старается исправить их на следующем уроке. При получении 5-, плачет, после чего ложится спать в 7.
+		</br> </br>
+		<a href='yusich.html' class = 'more_info' title = 'Узнай о ботане больше'> Подробнее о зубре </a>
+	</div>
+
+	<div class="botan">
+		<a href='ya.html'> <img class = 'faceimage' src = 'images/ya.jpg' title = 'Хороший ботан, не так ли?'/> </a> <p class='title_botan'> Георгий Фролов </p>
+		<p> Силен в: </p>
+		<ul>
+			<li> Математика </li>
+			<li> Литература </li>
+			<li> Физика </li>
+		</ul>
+		</br>
+			Ботан, рассчитанный на широкую аудиторию, может помочь со многими предметами, добросовестно делает домашку. Не безгует получать 5-, но плачет после каждой двойки. Ложиться в 10, но зато никогда ни минутой позже.
+		</br> </br>
+		<a href='ya.html' class = 'more_info' title = 'Узнай о ботане больше'> Подробнее о зубре </a>
+	</div>
+
+	<div class="botan">
+		<a href='garan.html'> <img class = 'faceimage' src = 'images/garan.jpg' title = 'Хороший ботан, не так ли?'/> </a> <p class='title_botan'> Андрей Темников </p>
+		<p> Силен в: </p>
+		<ul>
+			<li> Русский язык </li>
+			<li> Литература </li>
+			<li> Программирование </li>
+		</ul>
+		</br>
+			Ботан "гуманитарно-математический". Напишет за вас сочинение, и решит биквадратное уравнение. Авторитет, более восьми лет не слезает с доски почета. Рекордсмен оценок, и любимец учителей, и все это один человек!
+		</br> </br>
+		<a href='garan.html' class = 'more_info' title = 'Узнай о ботане больше'> Подробнее о зубре </a>
+	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
